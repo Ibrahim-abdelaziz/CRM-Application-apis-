@@ -1,0 +1,138 @@
+/* Start Header */
+.vl {
+    border-left: 3px solid gray;
+    
+  }
+
+.home{
+    background: #C7C1FD;
+}
+
+.home img{
+    border-radius: 50%;
+}
+.head .client{
+    background:#5D5899;
+    color: #FFF;
+    height: 60px;
+}
+.head .client_box img{
+    border-radius: 50%;
+    height: 40px;
+    /*margin-right: 10%*/
+}
+
+.head .client_box h4{
+    line-height: 1.5;
+    padding-top: 10px;
+}
+.head .cont_groub{
+    border-left: 3px solid #86059e;
+    padding: 0 10px
+}
+span{
+    font-size: 11px;
+}
+
+.head .new_clinet{
+    background: #FF8800;
+    text-decoration:underline;
+    line-height:1;
+    height: 30px;
+
+}
+
+.a_clinets{
+    background-color: #C7C1FD;
+}
+
+.a_clinets a{
+    text-decoration:underline;
+}
+
+.head .new_clinet a{
+    color: rgb(45, 45, 131);
+    font-size: 11px;
+    font-weight: 800;
+    
+}
+.head .a_clinets{
+    background: #C7C1FD;
+    color: blue;
+    font-size: 14px;
+    font-weight: 1000;
+    height: 40px;
+}
+::placeholder{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+    text-align:left;
+    
+}
+.head .a_clinets a{
+    color: blue;
+    text-decoration: none
+}
+.head .a_clinets input[type=text]{
+    width: 60px;
+}   
+
+.head .a_clinets input[type=number]{
+    border: px solid #C7C1FD;
+    border-radius: 10px ;
+    overflow: unset
+}
+
+section{
+    width: 100%;
+    height:35px;
+    background-color:#f2f2f2;
+    float: left;
+}
+
+section p{
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-top: 7px;
+    font-weight:700;
+
+}
+
+span{
+    font-weight:900;
+
+}
+
+.n{
+    float: right;
+    position: relative;
+    bottom: 32px;
+    right:70px;
+}
+
+table{
+    width: 100%;
+    
+}
+
+th{
+    color: blue;
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+td{
+    font-size: 11px;
+    font-weight: 650; 
+}
+.balance{
+    text-align:right;
+}
+
+.tab-content > .active{
+    display: none;
+}

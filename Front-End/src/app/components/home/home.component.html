@@ -1,0 +1,218 @@
+<div class="home">
+  <div class="container">
+      <div class="row">
+          <div class="row">
+                <div class="board">
+                    <div class="board-inner">
+                        <ul class="nav nav-tabs col-md" id="myTab">
+                            <div class="liner"></div>
+                            
+                            <li class="">
+                                <a href="#profile" data-toggle="tab" title="profile" aria-expanded="false">
+                                    <span class="round-tabs two">                                     
+                                        <img src="/assets/img/1.png" alt="This Is Img" width="50px" height="40px">
+                                        Client Manager                                        
+                                    </span>                                    
+                                </a>                                
+                            </li>
+    
+                            <div class="vl"></div>
+
+                            <li class="active">
+                                <a href="#video" data-toggle="tab" title="video" aria-expanded="true">
+                                    <span class="round-tabs three">
+                                        <img src="/assets/img/5.png" alt="This Is Img" width="50px" height="40px">
+                                        Device Manager
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            <div class="vl"></div>
+
+                            <li class="">
+                                <a href="#Event" data-toggle="tab" title="Event" aria-expanded="false">
+                                    <span class="round-tabs four">
+                                        <img src="/assets/img/3.png" alt="This Is Img" width="50px" height="40px">
+                                        Order Manager
+                                    </span>
+                                </a>
+                            </li>
+
+                            <div class="vl"></div>
+
+                            <li class="">
+                                <a href="#Club" data-toggle="tab" title="Club" aria-expanded="false">
+                                    <span class="round-tabs four">
+                                        <img src="/assets/img/6.png" alt="This Is Img" width="50px" height="40px">
+                                        Sales Manager
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            <div class="vl"></div>
+
+                            <li class="">
+                                <a href="#messages" data-toggle="tab" title="messages" aria-expanded="false">
+                                    <span class="round-tabs five">
+                                        <img src="/assets/img/8.png" alt="This Is Img" width="50px" height="40px">
+                                        Reports & Stats
+                                    </span>
+                                </a>
+                            </li>
+
+                            <div class="vl"></div>
+
+                            <li class="">
+                                <a href="#Setup" data-toggle="tab" title="Setup" aria-expanded="false">
+                                    <span class="round-tabs five">
+                                        <img src="/assets/img/2.png" alt="This Is Img" width="50px" height="40px">
+                                        Setup & Admin
+                                    </span>
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>  
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="profile">  
+                            User Profile
+                        </div>
+                        <div class="tab-pane fade" id="picture">
+                            User Pictures
+    
+                        </div>
+                        <div class="tab-pane fade  active in" id="video">
+                          User Video  
+                        </div>
+                        <div class="tab-pane fade" id="Event">
+                            User Events
+                        </div>
+                        <div class="tab-pane fade" id="Club">
+                          User Club
+                        </div>
+                        <div class="tab-pane fade" id="messages">
+                            User Messages
+                        </div>
+                        <div class="tab-pane fade" id="Setup">
+                            User Messages
+                        </div>                                           
+                    </div>
+                </div>
+            </div>
+      </div>
+  </div>
+</div>
+<div class="a_clinets p-2">
+    <div class="row">
+        <div class="col-9">
+            <span>You Are Here : </span>
+            <input type="text" placeholder="welcome"> <a href=""> Client Manager</a>
+            <!--<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>-->
+        </div><!-- ./col-4-->
+        <div class="col-3">
+            <span>Search</span>
+            <input type="text" placeholder="Client Manager">
+            <span>Tag:</span>
+            <input type="text">
+        </div><!-- ./col-4-->
+    </div><!-- ./row-->
+</div>
+
+<!--Start Header-->
+<header class="head">
+  <div class="client py-2">
+      <div class=""><!--class="container"-->
+          <div class="row">
+              <div class="col-6">
+                  <div class="client_box mr-auto">
+                      <div class="client_box_title d-flex">
+                          <img src="/assets/img/home.png" alt="This Is Img" width="50px" height="40px">
+                          <h4 class="ml-3">Client Manager</h4>
+                      </div><!-- ./client_box_title-->
+                  </div><!-- ./client_box-->
+              </div><!-- ./col-6-->
+              <div class="ml-auto" style="margin-left: 500px !important;">
+                  <div class="cont">
+                      <div class="cont_groub">
+                          <div class="cont_box">
+                              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                              <span> 3844</span>
+                              <span> total </span>
+                          </div><!-- ./cont_box-->
+                          <div class="cont_box">
+                              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                              <span> 3844</span>
+                              <span> total</span>
+                          </div><!-- ./cont_box-->
+                      </div><!-- ./cont_groub-->
+                  </div><!-- ./cont-->
+              </div><!-- ./col-6-->
+          </div><!-- ./row-->
+      </div><!-- ./container-->
+  </div>
+  <!-- ./client-->
+  <div class="new_clinet p-2">
+      <a routerLink="add-task">Add a New Client</a>
+  </div>
+  <!-- ./new_clinet-->
+  <div class="a_clinets p-2">
+      <div class="row">
+          <div class="col-4">
+              <a href="#">Active Clients</a>
+          </div><!-- ./col-4-->
+          <div class="col-4">
+              <span>Jump to client ID #</span>
+              <input type="text">
+              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+          </div><!-- ./col-4-->
+          <div class="col-4">
+              <span>View:</span>
+              <input type="number" placeholder="  Active Clients">
+              <span>Tag:</span>
+              <input type="text">
+          </div><!-- ./col-4-->
+      </div><!-- ./row-->
+  </div>
+  <!-- ./a_clinets-->
+</header>
+<!--End Header-->
+
+<section>
+  <p>Clients <span> 1-100 </span> of 1000 Shown </p>
+  <span class="n"> </span>
+</section>
+
+<table class="table table-bordered table-striped table-sm">
+  <thead>
+    <tr>
+      <td scope="col"></td>
+      <td scope="col"></td>
+      <th scope="col">ID</th>
+      <th scope="col">Last_Name</th>
+      <th scope="col">First_Name</th>
+      <th scope="col">Company</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Balance</th>
+      <th scope="col">Authorization_Forms</th>
+      <th scope="col">Reseller</th>
+      <th scope="col">Client_may_have_Private</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let client of clientsList; index as i">
+      <th scope="col"></th>
+      <td><input type="checkbox" class="form-check-input"></td>
+      <th>{{client.id}}</th>
+      <td>{{client.Last_Name}}</td>
+      <td>{{client.First_Name}}</td>
+      <td>{{client.Company}}</td>
+      <td>{{client.Phone}}</td>
+      <td>{{client.Email}}</td>
+      <td class="balance">{{client.Balance}}</td>
+      <td>{{client.Authorization_Forms}}</td>
+      <td>{{client.Reseller}}</td>
+      <td>{{client.Client_may_have_Private}}</td>
+    </tr>
+  </tbody>
+</table>

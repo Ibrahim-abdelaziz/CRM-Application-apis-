@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+    color: #999;
+    margin-top: 10px;
+}
+
+.one{
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+}
+
+input{
+    margin-bottom: 15px;
+}

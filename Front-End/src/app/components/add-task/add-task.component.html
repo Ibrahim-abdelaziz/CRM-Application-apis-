@@ -1,0 +1,66 @@
+<h2>Add New Customer</h2>
+
+<div class="one">
+  <form [formGroup]='form' (submit)="SubmitPost(form)">
+    <div class="form-group">
+      <div *ngIf="form.errors" class="alert alert.danger">
+          Form is invalid
+      </div>
+      <input [(ngModel)]="clientModel.First_Name" placeholder="Enter First_Name" type="text" class="form-control" id="First_NameControl" formControlName="First_NameControl">            
+        <div *ngIf="form.controls.First_NameControl.touched && form.controls.First_NameControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.First_NameControl.errors.required'>
+              First_Name is Required
+            </div>
+        </div>
+      <input [(ngModel)]="clientModel.Last_Name" placeholder="Enter Last_Name" type="text" class="form-control" id="Last_NameControl" formControlName="Last_NameControl">            
+        <div *ngIf="form.controls.Last_NameControl.touched && form.controls.Last_NameControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.Last_NameControl.errors.required'>
+              Last_Name is Required
+            </div>
+        </div>
+        <input [(ngModel)]="clientModel.Phone" placeholder="Enter phone" type="text" class="form-control" id="phoneControl" formControlName="phoneControl">            
+        <div *ngIf="form.controls.phoneControl.touched && form.controls.phoneControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.phoneControl.errors.required'>
+              phone is Required
+            </div>
+        </div> 
+        <input [(ngModel)]="clientModel.Company" placeholder="Enter company" type="text" class="form-control" id="companyControl" formControlName="companyControl">            
+        <div *ngIf="form.controls.companyControl.touched && form.controls.companyControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.companyControl.errors.required'>
+              company is Required
+            </div>
+        </div> 
+        <input [(ngModel)]="clientModel.Email" placeholder="Enter email" type="email" class="form-control" id="emailControl" formControlName="emailControl">            
+        <div *ngIf="form.controls.emailControl.touched && form.controls.emailControl.invalid" class="alert alert-danger">
+          <div *ngIf='form.controls.emailControl.errors.required' pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$">
+              Email is Required & Email must be a valid email address
+          </div>
+        </div> 
+        <input [(ngModel)]="clientModel.Balance" placeholder="Enter Balance" type="text" class="form-control" id="BalanceControl" formControlName="BalanceControl">            
+        <div *ngIf="form.controls.BalanceControl.touched && form.controls.BalanceControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.BalanceControl.errors.required'>
+              Balance is Required
+            </div>
+        </div> 
+        <input [(ngModel)]="clientModel.Authorization_Forms" placeholder="Enter Authorization_Forms" type="text" class="form-control" id="Authorization_FormsControl" formControlName="Authorization_FormsControl">            
+        <div *ngIf="form.controls.Authorization_FormsControl.touched && form.controls.Authorization_FormsControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.Authorization_FormsControl.errors.required'>
+              Authorization_Forms is Required
+            </div>
+        </div>
+        <input [(ngModel)]="clientModel.Reseller" placeholder="Enter Reseller" type="text" class="form-control" id="ResellerControl" formControlName="ResellerControl">            
+        <div *ngIf="form.controls.ResellerControl.touched && form.controls.ResellerControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.ResellerControl.errors.required'>
+              Reseller is Required
+            </div>
+        </div>
+        <input [(ngModel)]="clientModel.Client_may_have_Private" placeholder="Enter Client_may_have_Private" type="text" class="form-control" id="Client_may_have_PrivateControl" formControlName="Client_may_have_PrivateControl">            
+        <div *ngIf="form.controls.Client_may_have_PrivateControl.touched && form.controls.Client_may_have_PrivateControl.invalid" class="alert alert-danger">
+            <div *ngIf='form.controls.Client_may_have_PrivateControl.errors.required'>
+              Client_may_have_Private is Required
+            </div>
+        </div>             
+    </div>          
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
